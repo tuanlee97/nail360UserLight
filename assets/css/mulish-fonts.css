@@ -1,0 +1,60 @@
+/* font-weight: 200 */
+@font-face {
+    font-family: 'Mulish-ExtraLight';
+    src: url(../fonts/Mulish-ExtraLight.ttf);
+}
+/* font-weight: 300 */
+@font-face {
+    font-family: 'Mulish Light';
+    src: url(../fonts/Mulish-Light.ttf);
+}
+/* font-weight: 400 */
+@font-face {
+    font-family: 'Mulish Regular';
+    src: url(../fonts/Mulish-Regular.ttf);
+}
+/* font-weight: 500 */
+@font-face {
+    font-family: 'Mulish Medium';
+    src: url(../fonts/Mulish-Medium.ttf);
+}
+/* font-weight: 600 */
+@font-face {
+    font-family: 'Mulish SemiBold';
+    src: url(../fonts/Mulish-SemiBold.ttf);
+}
+/* font-weight: 700 */
+@font-face {
+    font-family: 'Mulish Bold';
+    src: url(../fonts/Mulish-Bold.ttf);
+}
+/* font-weight: 900 */
+@font-face {
+    font-family: 'Mulish Black';
+    src: url(../fonts/Mulish-Black.ttf);
+}
+/* Default font: Mulish Regular */
+* {
+    font-family: 'Mulish Regular';
+ }
+ .mulish-extralight{
+    font-family: 'Mulish ExtraLight';
+ }
+ .mulish-light{
+    font-family: 'Mulish Light';
+ }
+ .mulish-regular{
+    font-family: 'Mulish Regular';
+ }
+ .mulish-medium{
+    font-family: 'Mulish Medium';
+ }
+ .mulish-semibold{
+    font-family: 'Mulish SemiBold';
+ }
+ .mulish-bold{
+    font-family: 'Mulish Bold';
+ }
+ .mulish-black{
+    font-family: 'Mulish Black';
+ }

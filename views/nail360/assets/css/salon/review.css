@@ -1,0 +1,302 @@
+/* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+.rating-group {
+  display: inline-flex;
+}
+.review-bg{
+  background-color:#F5F5F5;
+}
+.btn-review-submit{
+  background-color: #fff;
+  color: var(--n360-main-color);
+  border : 1px solid var(--n360-main-color);
+  padding :7px 37px;
+  transition: all 0.3s ease;
+}
+.btn-review-submit:hover{
+  background-color: var(--n360-main-color);
+  color: #fff;
+
+}
+.customer-review-avatar{
+  object-fit: cover;
+  width: 60px;
+  border-radius: 50%;
+  border: 1px solid var(--n360-radius-border-color);
+}
+/* make hover effect work properly in IE */
+.rating__icon {
+  pointer-events: none;
+}
+
+/* hide radio inputs */
+.rating__input {
+  position: absolute !important;
+  left: -9999px !important;
+}
+
+/* hide 'none' input from screenreaders */
+.rating__input--none {
+  display: none;
+}
+
+/* set icon padding and size */
+.rating__label {
+  cursor: pointer;
+  padding: 0 0.1em;
+  font-size: 1.25rem;
+}
+
+/* set default star color */
+.rating__icon--star {
+  color: #ffb800;
+}
+
+/* if any input is checked, make its following siblings grey */
+.rating__input:checked ~ .rating__label .rating__icon--star {
+  color: #ddd;
+}
+
+/* make all stars #FFB800 on rating group hover */
+.rating-group:hover .rating__label .rating__icon--star {
+  color: #ffb800;
+}
+
+/* make hovered input's following siblings grey on hover */
+.rating__input:hover ~ .rating__label .rating__icon--star {
+  color: #ddd;
+}
+.none_rating__icon--star {
+  color: #ddd;
+}
+
+.select2-container--default .select2-selection--multiple {
+  min-height: 115px !important;
+  border-radius: 20px !important;
+  border-color: #cdcdcd !important;
+  padding: 0.5rem 0.7rem !important;
+}
+.select2-container--open .select2-selection--multiple {
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+/* Chrome */
+.select2-results__options::-webkit-scrollbar {
+  width: 5px;
+}
+
+.select2-results__options::-webkit-scrollbar-track {
+  box-shadow: inset 1px 1px 5px #e1e1e1;
+  border-radius: 15px;
+}
+
+.select2-results__options::-webkit-scrollbar-thumb {
+  background-color: #d9d9d9;
+  border-radius: 15px;
+}
+
+.select2-results__options::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+/* IE */
+.select2-results__options {
+  scrollbar-face-color: #d9d9d9;
+  scrollbar-shadow-color: #e1e1e1;
+  scrollbar-highlight-color: #777;
+}
+
+/* FireFox */
+.select2-results__options {
+  scrollbar-color: #d9d9d9;
+  scrollbar-width: thin;
+}
+.select2-results__option--highlighted {
+  background-color: var(--n360-main-color) !important;
+}
+.select2-selection__choice {
+  background-color: #ebebeb !important;
+  border: 1px solid #cdcdcd !important;
+  color: #333;
+  font-size: 12px;
+  padding: 8px 20px !important;
+  border-radius: 300px !important;
+}
+.select2-selection__choice__remove {
+  border-right: none !important;
+  padding: 0 !important;
+  left: auto !important;
+  right: 12px;
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+/* ------------------------------------- */
+.input_img {
+  display: none;
+}
+
+.input_img_label{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#sortable {
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  list-style-type: none;
+}
+
+#sortable li {
+  float: left;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  position: relative;
+  background-color: #ffffff;
+}
+
+#sortable li:not(:last-child) {
+  margin-right: 10px;
+}
+#sortable li,
+#sortable li img {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+#sortable li img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+}
+#sortable li div.order-number {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  font-size: 12px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sortable li div.order-number:hover{
+  background-color: var(--n360-main-color);
+  cursor: pointer;
+}
+#sortable li.file-empty{
+  background-color: #FFECEC;
+  border: 1px dashed var(--n360-main-color);
+}
+#sortable li.file-empty:hover{
+  background-color: #fdbfbf;
+}
+#sortable li label:hover{
+  cursor: pointer;
+}
+.list_customer_reviews{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-height: 497px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.list_customer_reviews li:not(:last-child){
+  border-bottom: 1px solid #F1F1F1;
+}
+/* Chrome */
+
+.list_customer_reviews::-webkit-scrollbar {
+  width: 5px;
+}
+
+
+.list_customer_reviews::-webkit-scrollbar-track {
+  /*background-color: 5f5f5f;*/
+  box-shadow: inset 1px 1px 5px #e1e1e1;
+  border-radius: 15px;
+}
+
+.list_customer_reviews::-webkit-scrollbar-thumb {
+  background-color: #d9d9d9;
+  border-radius: 15px;
+}
+
+.list_customer_reviews::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+/* IE */
+.list_customer_reviews {
+  scrollbar-face-color: #d9d9d9;
+  scrollbar-shadow-color: #e1e1e1;
+  scrollbar-highlight-color: #777;
+}
+
+/* FireFox */
+.list_customer_reviews {
+  scrollbar-color: #d9d9d9;
+  scrollbar-width: thin;
+}
+.progress-bar{
+  border-radius: var(--bs-progress-border-radius);
+}
+.progress, .progress-stacked {
+  height: 19px;
+}
+
+.bg-review-5{
+  background-color: #76DC99;
+}
+.bg-review-4{
+  background-color: #B7EA83;
+}
+.bg-review-3{
+  background-color: #F6D757;
+}
+.bg-review-2{
+  background-color: #FAB851;
+}
+.bg-review-1{
+  background-color: #F17A55;
+}
+.review-img{
+  width: 158px;
+  height: 162px;
+  border-radius: 10px;
+}
+.review-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+.sm-circle__search_btn{
+  width: 26px;
+  height: 26px;
+}
+.sm-navbar__search{
+  overflow: hidden;
+  padding: 2px 3px 2px 2px;
+  border-radius: 300px;
+  border: 1px solid var(--n360-border-color);
+  min-width: 210px;
+}
+.see-more-review:hover{
+  color: #cc1d61;
+}
+.customer_revies{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

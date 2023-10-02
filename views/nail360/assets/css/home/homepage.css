@@ -1,0 +1,424 @@
+/* Home Carousel */
+.section-home-carousel{
+    min-height: 190px;
+    padding: 0 35px 35px;
+    background: linear-gradient(#1E1E1E, #5E5E5E);
+}
+.section-home-carousel img {
+    height: 100%;
+}
+.home-carousel__wrap{
+    max-width: 1290px ;
+	margin: 0 auto;
+}
+.carousel-inner{
+    overflow: visible;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.home-carousel__caption{
+    max-width: 487px;
+    position: absolute;
+    bottom: 0.5rem;
+    top: 0.5rem;
+    left: 3.5rem;
+    color: #fff;
+}
+.carousel__caption--heading{
+    font-size: 3.75rem;
+    line-height: 4.375rem;
+}
+.carousel__caption--sub-heading{
+    font-size: 25px;
+    line-height: 31.38px;
+}
+/* Top Rated*/
+.card-body.top_salon__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.section-top-rate-salons{
+    padding: 2rem 0;
+}
+.top_salon{
+    height: 320px;
+    width: 281px;
+    overflow: hidden;
+}
+.top_salon:hover{
+  cursor: pointer;
+  border: 1px solid var(--n360-main-color);
+  filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.25));
+  -webkit-filter:drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.25));
+}
+.top_salon__img--top, .top_salon__img--top img{
+    height: 150px;
+    width: 100%;
+}
+.top_salon__img--avatar, .top_salon__img--avatar img{
+    width: 37px;
+    height: 37px;
+}
+.top_salon__img--avatar img{border: 1px solid #777;}
+.list-top-salons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 1.5rem;
+    column-gap: 1rem;
+    padding: 10px 98px 35px;
+}
+.section-favorite-salons__heading{
+    padding: 35px 0px 10px;
+}
+.section-favorite-salons{
+    background-color: #F3F3F3;
+    border-radius: 10px;
+}
+.favorite-salons-container{
+    position: relative;
+    padding-left: 98px;
+    padding-right: 98px;
+}
+.list_favorite-salons{
+    padding: 10px 0px 35px !important;
+}
+.section-favorite-salons__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.favorite__salons-navigation-container {
+    position: relative;
+    margin-right: 6%;
+}
+.brand_name{
+    line-height: 22.6px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+.top_salon__info--description{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+
+}
+.top_salon__info--bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top_salon__booking-btn{
+    padding: 12px 20px;
+    line-height: 10px;
+    color: var(--n360-btn-label-color);
+    transition: all 0.3s;
+    position: relative;
+    min-width: 142px;
+    min-height: 34px;
+    border: 1px solid var(--n360-paragraph-color);
+}
+.top_salon__booking-btn:hover {
+    color: #FFF;
+    border: none;
+    background-color: var(--n360-main-color);
+    filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.25));
+    -webkit-filter:drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.25));
+}
+.favs-button-next{
+    left: 0!important;
+}
+.favs-button-next:after{
+    content: url(/nail360UserLight/views/nail360/assets/icons/nav-next.svg) !important;
+}
+.favs-button-next.swiper-button-disabled:after{
+    content: url(/nail360UserLight/views/nail360/assets/icons/nav-next-disabled.svg) !important;
+}
+.favs-button-prev{
+    left: -40px!important;
+}
+.favs-button-prev:after{
+    content: url(/nail360UserLight/views/nail360/assets/icons/nav-prev.svg) !important;
+}
+.favs-button-prev.swiper-button-disabled:after{
+    content: url(/nail360UserLight/views/nail360/assets/icons/nav-prev-disabled.svg) !important;
+}
+
+
+/* Testimonial */
+.section_customer_testimonial_template{
+    background-color: #F9FAFA;
+    padding: 44px 35px;
+}
+.card-testimonial{
+    transition: transform .2s;
+    width: 414px;
+    height: 273px;
+    border-radius: 5px;
+    box-shadow: 5px 2px 15px 0px rgba(0,0,0,0.16);
+    -webkit-box-shadow: 5px 2px 15px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 5px 2px 15px 0px rgba(0,0,0,0.16);
+}
+.card-testimonial:hover{
+    cursor: pointer;
+    -ms-transform: translateY(-10px); /* IE 9 */
+    -webkit-transform: translateY(-10px); /* Safari 3-8 */
+    transform: translateY(-10px);
+    box-shadow: 5px 2px 20px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 5px 2px 20px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 5px 2px 20px 0px rgba(0,0,0,0.25);
+}
+.customer_testimonial__heading{
+    font-size: 30px;
+    line-height: 48px;
+}
+.customer_testimonial__subheading{
+    max-width: 620px;
+    margin-bottom: 3rem;
+}
+.testimonial__img--avatar{
+    width: 54px;
+    height: 54px;
+    overflow: hidden;
+    border: 1px solid #777;
+}
+.testimonial__img--avatar img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.testimonial__description{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.testimonial__img--user_avatar{
+    width: 41px;
+    height: 41px;
+    overflow: hidden;
+}
+.testimonial__img--user_avatar img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+/*Salon Owner Question*/
+.section-salon-owner-question__container{
+    margin: 2.5rem 98px;
+    height: 258px;
+    border-radius: 10px;
+    background-position: left center, right center;
+    background-repeat: no-repeat;
+    background-color: #fcedf2;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.5rem;
+}
+.section-salon-owner-question__container--paragraph{
+    margin-top: 1rem;
+}
+.list-salon__btn{
+    width: 212px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    border: none;
+}
+.section-salon-owner-question__container--text{
+    max-width: 450px;
+}
+.section-salon-owner-question__container--text h3{
+    line-height: 37.65px;
+}
+.section-salon-owner-question__container--text p{
+    line-height: 22.59px;
+}
+/* Responsive */
+ 
+ /* // X-Large devices (large desktops, less than 1400px) */
+ @media (max-width: 1399.98px) {  }
+  /* // Large devices (desktops, less than 1200px) */
+ @media (max-width : 1365px){
+    .top_salon{
+        width: 100%;
+        height: 100%;
+        min-height : 375px;
+    }
+    .list-top-salons{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .top_salon__img--top, .top_salon__img--top img{
+        height: 200px;
+    }
+
+
+   
+ }
+ @media (max-width : 1320px){
+    .list-salon__btn{
+        position: absolute;
+        bottom: -65px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+ }
+ @media (max-width: 1199.98px) {
+    .top_salon__img--top, .top_salon__img--top img{
+        height: 250px;
+    }
+    .list-top-salons,.favorite-salons-container{
+        padding : 1rem;
+    }
+ }
+ @media (max-width: 1056px) {
+    .section-salon-owner-question__container{
+        background-position: right;
+    }
+ }
+ /* // Medium devices (tablets, less than 992px) */
+ @media (max-width: 991.98px) { 
+    .list-top-salons{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .section-home-carousel{
+        padding: 0 1rem 1rem;
+    }
+    .carousel__caption--heading {
+        font-size: 2rem;
+        line-height: 1;
+    }
+    .carousel__caption--sub-heading {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    .home-carousel__caption {
+        max-width: 34%;
+    }
+    .list-top-salons{
+        padding : 1rem;
+    }
+    .section_customer_testimonial_template{
+        padding: 1.5rem 1rem;
+    }
+    .section-salon-owner-question__container--text {
+        max-width: 50%;
+    }
+    .section-salon-owner-question__container--text h3{
+        font-size: 1.2rem;
+    }
+    .section-salon-owner-question__container--text p{
+        font-size: 1rem;
+    }
+
+ }
+  /* // Small devices (landscape phones, less than 768px) */
+  @media (max-width: 767.98px) { 
+    .section-top-rate-salons__heading,.customer_testimonial__heading,.section-favorite-salons__heading{
+        font-size: 20px;
+        z-index: 1;
+        position: relative;
+    }
+
+    .customer_testimonial__subheading{
+        line-height: 1.5;
+        font-size: 14px;
+        z-index: 1;
+        position: relative;
+    }
+    .section-salon-owner-question__container{
+        margin: 1rem;
+        padding: 1.5rem;
+        background-size: cover;
+    }
+    .section-salon-owner-question__container--text {
+        max-width: 60%;
+    }
+    .section-salon-owner-question__container--text h3{
+        font-size: 18px;
+    }
+    .section-salon-owner-question__container--text p{
+        font-size: 14px;
+    }
+ }
+ @media (max-width: 700px) { 
+    .carousel__caption--heading {
+        font-size: 1.5rem;
+    }
+    .carousel__caption--sub-heading {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    .home-carousel__caption {
+        max-width: 40%;
+        left: 1.5rem;
+    }
+    .swiper-pagination-bullet{
+        width: 8px !important;
+        height: 8px !important;
+    }
+    .list-top-salons{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #swiperFavoriteSalon .swiper-wrapper{
+        flex-wrap: wrap;
+        row-gap: 1rem;
+    }
+    #swiperFavoriteSalon .swiper-wrapper .swiper-slide {
+        margin-right: -16px !important;
+    }
+
+    .favorite__salons-navigation-container{
+          display: none;
+        }
+    
+  }
+
+ /* X-Small devices (portrait phones, less than 576px) */
+ @media (max-width: 575.98px) { 
+    .section-home-carousel{
+        min-height: 125px;
+    }
+    .carousel__caption--heading{
+        font-size: 16px;
+    }
+    .carousel__caption--sub-heading{
+        font-size: 14px;
+    }
+    .card-testimonial{
+        height: auto;
+    }
+    .section-salon-owner-question__container--text h3{
+        line-height: 1;
+    }
+    .section-salon-owner-question__container{
+        height: 150px;
+    }
+    .home-carousel__caption,.section-salon-owner-question__container--text {
+        max-width: 70%;
+    }
+    .section-salon-owner-question__container--paragraph{
+        margin-top: 0;
+        margin-bottom: 0.25rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+    }
+    .top_salon__info--bottom{
+        flex-wrap: wrap;
+        row-gap: 1rem;
+    }
+  }
+  @media (max-width: 456px) {
+    .section-salon-owner-question__container--text {
+        max-width: 60%;
+    }
+   }

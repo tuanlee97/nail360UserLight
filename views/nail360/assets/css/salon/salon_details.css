@@ -1,0 +1,758 @@
+.salon_detail_info{
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
+.salon_detail_info__brandimg {
+  width: 70px;
+  height: 70px;
+}
+.salon_detail_info__brandimg img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid var(--n360-radius-border-color);
+}
+.salon_feature{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.salon_feature__btn--item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 0.25rem 1.5rem;
+}
+.salon_feature__btn--item:hover {
+  cursor: pointer;
+  background-color: #e0e0e0;
+  filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.25));
+  -webkit-filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.25));
+}
+.salon_detail--gallery {
+  --gap: 10px;
+  --num-cols: 6;
+  --row-height: 177px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+}
+.salon_detail--gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.btn-tags{
+  background-color: #EDEDED;
+  height: 28px;
+}
+.salon_detail--gallery img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.show-all-photos svg{
+  vertical-align: unset;
+}
+.show-all-photos{
+  background-color: #fff;
+  color : #777;
+  border: 1px solid #CDCDCD;
+  position: absolute;
+  bottom: 2rem;
+  right: 1rem;
+  z-index: 1;
+}
+.show-all-photos:hover{
+  background-color: #e0e0e0;
+}
+.modal-dialog-gallery{
+  max-width: 80%;
+}
+.modal-dialog-gallery-item {
+  max-width: 55%;
+}
+.gallery-body, .gallery-header{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.gallery-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.gallery-body{
+  margin-top : 70px;
+}
+.grid-img-item{
+  height: 225px;
+}
+.grid-img-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+.gallery-detail img {
+  width: max-content;
+  max-width: 100%;
+}
+.grid-img-item img:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+.user-info--img{
+  overflow: hidden;
+}
+.user-info--img img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.salon_detail--gallery img:nth-child(3) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.salon_detail--gallery img:first-child {
+  border-top-left-radius: 10px;
+}
+.salon_detail--gallery img:nth-child(5) {
+  border-top-right-radius: 10px;
+}
+.salon_detail--gallery img:nth-child(6) {
+  border-bottom-left-radius: 10px;
+}
+.salon_detail--gallery img:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+.salon-service-container {
+  display: flex;
+}
+.list-salon-container {
+  width: calc(100% - 490px);
+}
+.booking_aside {
+  background-color: #fff;
+  width: 400px;
+  height: 688px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding : 1rem;
+  margin-left: 1.5rem;
+  margin-top: 2.75rem;
+  border-radius: 6px;
+  box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.16);
+}
+.booking_aside_container{
+  width: 490px;
+}
+.quick-book-map {
+  border-radius: 6px;
+  width: 370px;
+  height: 247px;
+  background-color: #e0e0e0;
+}
+.contact__address,
+.contact__phone {
+  display: flex;
+  justify-content: space-between;
+}
+.contact__address--icon {
+  width: 25px;
+  height: 25px;
+  border-radius: 300px;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.02);
+  -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.02);
+  -moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.02);
+}
+.contact__address--btn {
+  background-color: #333;
+  color: #fff;
+  border-radius: 6px;
+  width: 76px;
+  height: 28px;
+  text-align: center;
+  border: none;
+}
+.contact__address--btn a {
+  color: #fff;
+  text-decoration: none;
+}
+.contact__address--btn:hover a {
+  font-weight: bold;
+}
+.contact__address--info {
+  max-width: 245px;
+  flex-grow: 1;
+}
+.btn-quickbook {
+  background: #f7f7f7;
+  text-align: left;
+  position: relative;
+}
+.btn-quickbook::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: var(--bs-btn-padding-x);
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+.accordion-header {
+  line-height: 10px;
+}
+.accordion-button {
+  color: var(--n360-btn-label-color);
+}
+.accordion-button:focus {
+  box-shadow: unset;
+}
+.accordion-button:not(.collapsed) {
+  background-color: unset;
+  color: var(--n360-btn-label-color);
+  box-shadow: unset;
+}
+.accordion-button::after,
+.accordion-button:not(.collapsed)::after {
+  width: 10px;
+  height: 10px;
+}
+
+.accordion-button::after,
+.accordion-button:not(.collapsed)::after {
+  background-position: bottom center;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJzb3J0LWRvd24iIHJvbGU9ImltZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMzIwIDUxMiIgY2xhc3M9InN2Zy1pbmxpbmUtLWZhIGZhLXNvcnQtZG93biBmYS13LTEwIGZhLTd4Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik00MSAyODhoMjM4YzIxLjQgMCAzMi4xIDI1LjkgMTcgNDFMMTc3IDQ0OGMtOS40IDkuNC0yNC42IDkuNC0zMy45IDBMMjQgMzI5Yy0xNS4xLTE1LjEtNC40LTQxIDE3LTQxeiIgY29sb3I9IiM3NzciIGNsYXNzPSIiPjwvcGF0aD48L3N2Zz4=);
+}
+.accordion-item {
+  padding: 0px 4px;
+}
+#accordion-list-technical {
+  max-height: 60vh;
+  overflow-y: scroll;
+}
+#list-technician {
+  max-height: 160px;
+  overflow-y: scroll;
+  padding: 0 4px;
+}
+.technician-title {
+  padding: 0 4px;
+}
+/* Chrome */
+#accordion-list-technical::-webkit-scrollbar,
+#list-technician::-webkit-scrollbar {
+  width: 5px;
+}
+
+#accordion-list-technical::-webkit-scrollbar-track,
+#list-technician::-webkit-scrollbar-track {
+  /*background-color: 5f5f5f;*/
+  box-shadow: inset 1px 1px 5px #e1e1e1;
+  border-radius: 15px;
+}
+
+#accordion-list-technical::-webkit-scrollbar-thumb,
+#list-technician::-webkit-scrollbar-thumb {
+  background-color: #d9d9d9;
+  border-radius: 15px;
+}
+
+#accordion-list-technical::-webkit-scrollbar-thumb:hover,
+#list-technician::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+/* IE */
+#accordion-list-technical,
+#list-technician {
+  scrollbar-face-color: #d9d9d9;
+  scrollbar-shadow-color: #e1e1e1;
+  scrollbar-highlight-color: #777;
+}
+
+/* FireFox */
+#accordion-list-technical,
+#list-technician {
+  scrollbar-color: #d9d9d9;
+  scrollbar-width: thin;
+}
+
+.custom-input-picker {
+  display: block;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0 auto;
+  width: min-content;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+.custom-input-picker:hover {
+  cursor: pointer;
+}
+.custom-input-picker:hover ~ #monthSelected {
+  color: var(--n360-main-color);
+}
+
+.custom-input-picker:focus {
+  outline: none;
+}
+.custom-input-picker::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+#monthSelected {
+  width: max-content;
+  margin: 0 auto;
+}
+.picker-wrap {
+  position: relative;
+}
+.datepicker {
+  margin-top: 10px;
+}
+.datepicker-dropdown.datepicker-orient-left:before {
+  left: 50% !important;
+}
+.datepicker-dropdown.datepicker-orient-left:after {
+  left: calc(50% + 1px) !important;
+}
+/* .datepicker td {
+  width: 60px !important;
+} */
+
+#dateList,
+#timeList {
+  display: flex;
+  width: max-content;
+}
+#formDateList,
+#formTimeList {
+  width: 440px;
+  max-width: 100%;
+  overflow: auto;
+  margin: 1rem auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: both;
+  position: relative;
+}
+
+#formDateList::-webkit-scrollbar,
+#formTimeList::-webkit-scrollbar {
+  display: none;
+}
+
+#datePrev,
+#dateNext,
+#timePrev,
+#timeNext {
+  background-color: #ededed;
+  border: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  transition: 0.5s;
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.3));
+  -webkit-filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.3));
+}
+#dateNext,
+#timeNext {
+  left: unset;
+  right: 0px;
+}
+#datePrev:hover,
+#dateNext:hover,
+#timePrev:hover,
+#timeNext:hover {
+  background-color: #777;
+}
+
+#dateList .item {
+  border-radius: 30px;
+  width: 45px;
+  height: 65px;
+  background-color: #fff;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 5px;
+  scroll-snap-align: start;
+  border: 1px solid #e8e8e8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#dateList .item.active {
+  border: 1px solid #682243;
+  filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.6));
+  -webkit-filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.6));
+}
+#dateList .item.disable,
+#timeList .item.disable{
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+#timeList .item {
+  border-radius: 4px;
+  width: 100px;
+  height: 32px;
+  background-color: #f5f5f5;
+  color: #333;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 5px;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#timeList .item.active {
+  background-color: #333;
+  color: #fff;
+  filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.6));
+  -webkit-filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.6));
+}
+
+.booking-detail-card {
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #cdcdcd;
+  overflow: hidden;
+  text-align: left;
+}
+.booking-detail-card--head {
+  background-color: #fcedf2;
+}
+.ticket {
+  border-radius: 6px;
+  border: 1px solid #f0f0f0;
+}
+.ticket-bd-bottom {
+  border-bottom: 1px solid #f0f0f0;
+}
+.booking-detail-card--item:not(:last-child) {
+  border-bottom: 1px solid #cdcdcd;
+}
+.add-another-service,
+.btn-add-another-guest {
+  text-decoration: none;
+}
+.add-another-service:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--n360-main-color);
+}
+.btn-add-another-guest:hover {
+  cursor: pointer;
+  color: #cc1d61;
+  text-decoration: underline;
+}
+.add_note textarea {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid #cdcdcd;
+}
+#dateBooking {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0 auto;
+  width: max-content;
+  text-align: center;
+  position: absolute !important;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  height: 100%;
+}
+#dateBooking:hover {
+  cursor: pointer;
+}
+#booking_date {
+  padding: 5px 1rem;
+}
+.booking_date-container:hover #booking_date {
+  background: rgba(211, 66, 122, 0.25);
+  color: #000;
+  width: max-content;
+  margin: 8px auto;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.delete-service {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.delete-service:hover {
+  background-color: #fcedf2;
+  cursor: pointer;
+}
+.delete-service:hover svg {
+  transform: scale(1.3);
+  transition: transform 0.1s ease;
+}
+.drop-btn {
+  position: relative;
+  border-radius: 20px;
+  border-color: #CDCDCD;
+}
+
+.drop-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 1rem 0.75rem;
+  border-width: 0 1px 1px;
+  border-style: solid;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-color: #CDCDCD;
+  background-color: #fff;
+}
+.drop-item {
+  color: #777;
+  text-decoration: none;
+}
+.drop-btn ~ .drop-menu {
+  display: none;
+}
+.drop-item:hover {
+  color: #333;
+  font-weight: 600;
+}
+.drop-btn-show {
+  min-width: 160px;
+  text-align: start;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom: 0;
+}
+.drop-btn-show:hover {
+  background-color: transparent;
+  color: #777;
+  border-color: #CDCDCD;
+}
+.drop-btn-show  ~ .drop-menu  {
+  display: block;
+}
+.drop-btn-show::after {
+  float: right;
+  margin-top: 7px;
+}
+.drop-sort-btn{
+  width: 100%;
+  min-height: 35px;
+}
+.drop-sort-btn--item:has(.drop-btn-show){
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  border-radius: 20px;
+}
+.list-btn{
+  transform: translateX(-20%);
+}
+#list_gallery_img{
+  min-height: 300px;
+  position: relative;
+}
+/* set default star color */
+.rating__icon--star {
+  color: #ffb800;
+}
+.none_rating__icon--star {
+  color: #ddd;
+}
+.list-salon-services{
+  grid-template-columns: repeat(3, 1fr);
+}
+#link-write-review::after{
+  content: ' Write a Review';
+}
+#link-share::after{
+  content: ' Share';
+}
+#link-save::after{
+  content: ' Save';
+}
+@media (max-width: 1419.98px) {
+  .salon_detail_section .section-wrap{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .booking_aside{
+    margin-left: auto;
+  }
+  .booking_aside_container{
+    width: 400px;
+  }
+  .list-salon-container {
+    width: calc(100% - 400px);
+    margin-right: 1rem;
+  }
+}
+@media (max-width: 1319.98px) {
+  .salon_detail_section .section-wrap-medium{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .n360_card,.list-salon-container {
+    width: 100%;
+    height: 100%;
+  }
+  .list-salon-services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .salon_detail_info{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .salon_feature__btn{
+    padding-left: 0;
+  }
+}
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .salon_detail_section .section-wrap-medium{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media (max-width: 1103px) {
+  .salon_detail_section .section-wrap-medium{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .salon_feature{
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 1rem;
+  }
+  .salon_detail_info {
+    align-items: flex-start;
+  }
+}
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .list-salon-services {
+    grid-template-columns: 1fr;
+  }
+  .salon_detail--gallery {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+  }
+  .salon_detail--gallery img{
+    min-height: 100px;
+  }
+  .salon_detail--gallery img:nth-child(3) {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .salon_detail--gallery img:nth-child(4) {
+    border-bottom-left-radius: 10px;
+  }
+  .salon_detail--gallery img:nth-child(5) {
+    border-top-right-radius: 0px;
+  }
+  .salon_detail--gallery img:nth-child(n+6) {
+    display: none;
+  }
+  #link-write-review::after{
+    content: '';
+  }
+  #link-share::after{
+    content: '';
+  }
+  #link-save::after{
+    content: '';
+  }
+
+ .salon_feature__btn li:nth-child(2) {
+    order: 3;
+  }
+  .salon_feature__btn li:nth-child(3) {
+    order: 2;
+  
+  }
+  .salon_feature__btn li:nth-child(4) {
+    order: 4;
+  }
+  .salon_feature__btn li:nth-child(5) {
+    order: 5;
+
+  }
+  .salon_feature__btn li:nth-child(2),.salon_feature__btn li:nth-child(4),.salon_feature__btn li:nth-child(5){
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    gap: 0;
+  }
+}
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+  .salon-service-container {
+    flex-direction: column-reverse;
+    row-gap: 1rem;
+  }
+  .booking_aside_container, .booking_aside,.quick-book-map{
+    width: 100%;
+  }
+  .quick-book-map{
+    height: auto;
+    aspect-ratio: 1.495;
+  }
+  .booking_aside{
+    height: auto;
+    -webkit-box-shadow : unset;
+    box-shadow : unset;
+    padding: 0;
+  }
+  .n360_card__feature_img, .n360_card__feature_img .feature_img{
+    height: auto;
+    aspect-ratio: 1.86;
+  }
+}
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .salon_feature__btn{
+    flex-wrap : wrap;
+  }
+  .salon_feature__btn--item{
+    font-size: 14px;
+    padding : 0.25rem 1rem;
+  }
+  .salon_detail_info__brandimg{
+    width: 100px;
+    height: 100px;
+  }
+}

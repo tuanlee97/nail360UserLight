@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule ^css/.*$ - [L]
+RewriteRule ^js/.*$ - [L]
+RewriteRule ^inc/.*$ index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php [QSA,L]

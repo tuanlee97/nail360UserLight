@@ -1,0 +1,54 @@
+.section-thankyou {
+  max-width: 807px;
+}
+.order-detail-container {
+  border: 1px solid #d9d9d9;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  width: 100%;
+}
+.order_info--base {
+  flex-grow: 1;
+}
+.order_info--base:not(:first-child) {
+  padding-left: 1.5rem;
+}
+.order_info--base:not(:last-child) {
+  border-right: 1px solid #d9d9d9;
+}
+.booking-details,
+.customer-details {
+  border-radius: 8px;
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+}
+.cs-detail-label {
+  width: 125px;
+}
+.customer-details--item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.customer-details--item:not(:last-child) {
+  border-bottom: 1px solid #cdcdcd;
+}
+.payment-total,
+.payment-method {
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+  width: 50%;
+  flex-grow: 1;
+  overflow: hidden;
+}
+.payment-total--footer {
+  background: linear-gradient(
+    279.84deg,
+    rgba(201, 23, 29, 0.15) 1.09%,
+    rgba(255, 205, 85, 0.2) 100.42%
+  );
+}
+.book-another {
+  padding: 14px 46px;
+}
