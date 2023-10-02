@@ -2,7 +2,7 @@
 $_rootPath = "/nail360UserLight";
 $_adminApi = "https://dev.nail360.info/light/api";
 
-$_domain = "192.168.1.46"; //Use for set cookies
+$_domain = "https://tuanlee97.github.io/nail360UserLight"; //Use for set cookies
 
 $_baseApi = "https://dev.nail360.info";
 $_baseImg = "https://dev.nail360.info";
